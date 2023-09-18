@@ -38,26 +38,6 @@ public class PriorityQueuDemo {
 
 }
 
-@Value
-@Builder
-class Employee {
-
-    String id, name;
-    int rank, age;
-
-    @Override
-    public boolean equals(Object obj) {
-        return ((Employee) obj).id == this.id;
-    }
-    @Override
-    public int hashCode() {
-        return age;
-    }
-
-    
-    
-
-}
 
 class Demo<T>{
 
